@@ -8,7 +8,7 @@ function App() {
       router={createBrowserRouter(
         [
           { path: "/", element: <Home /> },
-          { path: "/detail", element: <Detail /> },
+          { path: "/movie/:id", element: <Detail /> },
         ]
       )}
     />
