@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/github.io/react_movie_app/static/css/main.f456c0da.css",
+    "main.js": "/github.io/react_movie_app/static/js/main.79e577f0.js",
+    "index.html": "/github.io/react_movie_app/index.html",
+    "main.f456c0da.css.map": "/github.io/react_movie_app/static/css/main.f456c0da.css.map",
+    "main.79e577f0.js.map": "/github.io/react_movie_app/static/js/main.79e577f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f456c0da.css",
+    "static/js/main.79e577f0.js"
+  ]
+}
