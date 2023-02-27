@@ -7,8 +7,8 @@ function App() {
     <RouterProvider
       router={createBrowserRouter(
         [
-          { path: "/", element: <Home /> },
-          { path: "/movie/:id", element: <Detail /> },
+          { path: `${process.env.PUBLIC_URL}/`, element: <Home /> },
+          { path: `${process.env.PUBLIC_URL}/movie/:id`, element: <Detail /> },
         ]
       )}
     />
