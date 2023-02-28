@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import Movie from "../components/Movie"
+import Movie from "../components/Movie";
+import styles from "./Home.module.css";
 
 function Home() {
-    const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
   const getMovies = async () => {
     const json = await (
@@ -19,21 +20,21 @@ function Home() {
   }, []);
 
   return (
-    <div>
+    <div className={styles.container}>
       {loading ? (
-        <strong>Loading...</strong>
+        <strong className={styles.loading}>Loading...</strong>
       ) : (
-        <ul>
-          {movies.map((movie) => 
-            <Movie 
-              key={movie.id} 
+        <ul className={styles.movieContainer}>
+          {movies.map((movie) => (
+            <Movie
+              key={movie.id}
               id={movie.id}
-              title={movie.title} 
+              title={movie.title}
               mediumCoverImage={movie.medium_cover_image}
               genres={movie.genres}
               summary={movie.summary}
             />
-          )}
+          ))}
         </ul>
       )}
     </div>

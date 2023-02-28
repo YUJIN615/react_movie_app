@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: rgb(220, 231, 236);
+    box-sizing: border-box;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-size: 20px;
+}
+
+.movieContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
+    grid-gap: 100px;
+    padding: 50px;
+    width: 80%;
+    padding-top: 70px;
+}
+
+@media screen and (max-width: 1090px) {
+    .movies {
+      grid-template-columns: 1fr;
+      width: 100%;
+    }
+  }
