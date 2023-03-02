@@ -12,7 +12,6 @@ function Detail() {
       await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
     ).json();
     setDetail(json.data.movie);
-    console.log(detail);
     setLoading(false);
   };
   useEffect(() => {
@@ -29,7 +28,7 @@ function Detail() {
             <h2 className={styles.title}>{detail.title_long}</h2>
             <ul className={styles.genres}>
               {detail.genres.map(item => (
-                <li>{item}</li>
+                <li key={item}>{item}</li>
               ))}
             </ul>
             <div>{detail.description_full}</div>
