@@ -3,6 +3,7 @@
     height: 100%;
     min-height: 100vh;
     display: flex;
+    justify-content: center;
     background: rgb(220, 231, 236);
     box-sizing: border-box;
 }
